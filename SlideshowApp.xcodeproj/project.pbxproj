@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F54D902295483BF0074031A /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F54D901295483BF0074031A /* ShowImageViewController.swift */; };
 		4F85458029532A4F0057DE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85457F29532A4F0057DE54 /* AppDelegate.swift */; };
 		4F85458229532A4F0057DE54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85458129532A4F0057DE54 /* SceneDelegate.swift */; };
 		4F85458429532A4F0057DE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85458329532A4F0057DE54 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F54D901295483BF0074031A /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 		4F85457C29532A4F0057DE54 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F85457F29532A4F0057DE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F85458129532A4F0057DE54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				4F85457F29532A4F0057DE54 /* AppDelegate.swift */,
 				4F85458129532A4F0057DE54 /* SceneDelegate.swift */,
 				4F85458329532A4F0057DE54 /* ViewController.swift */,
+				4F54D901295483BF0074031A /* ShowImageViewController.swift */,
 				4F85458529532A4F0057DE54 /* Main.storyboard */,
 				4F85458829532A500057DE54 /* Assets.xcassets */,
 				4F85458A29532A500057DE54 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				4F85458429532A4F0057DE54 /* ViewController.swift in Sources */,
 				4F85458029532A4F0057DE54 /* AppDelegate.swift in Sources */,
 				4F85458229532A4F0057DE54 /* SceneDelegate.swift in Sources */,
+				4F54D902295483BF0074031A /* ShowImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
