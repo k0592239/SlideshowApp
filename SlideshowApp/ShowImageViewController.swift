@@ -10,10 +10,10 @@ import UIKit
 class ShowImageViewController: UIViewController {
 
     @IBOutlet weak var selectImageView: UIImageView!
-    var imageName:String = ""
+    var image:UIImage!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        selectImageView.image = image
         // Do any additional setup after loading the view.
     }
     

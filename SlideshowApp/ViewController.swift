@@ -35,16 +35,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.imageIndex = 0
         imageView.image = imageArray[self.imageIndex]
-        let imgTap = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
-        imageView.addGestureRecognizer(imgTap)
-        imageView.isUserInteractionEnabled = true
-    }
-    @objc func imageTapped(sender: UITapGestureRecognizer) {
-            if sender.state == .ended {
-                    print("UIImageView tapped")
-            }
     }
 
+    @IBAction func imageTapped(_ sender: Any) {
+    }
     // 進むボタン IBAction
     @IBAction func forward(_ sender: Any) {
         setImageIndexForward()
@@ -113,7 +107,10 @@ class ViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let showImageViewController:ShowImageViewController = segue.destination as! ShowImageViewController
-        showImageViewController.selectImageView = imageView
+        showImageViewController.image = imageView.image
+    }
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        
     }
 }
 

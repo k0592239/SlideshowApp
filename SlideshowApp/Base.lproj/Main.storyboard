@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHf-U8-uaP">
-                                <rect key="frame" x="285" y="549" width="53" height="31"/>
+                                <rect key="frame" x="244" y="586" width="53" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="再生"/>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPl-wV-ny3">
-                                <rect key="frame" x="165" y="549" width="53" height="31"/>
+                                <rect key="frame" x="161" y="586" width="53" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-KU-ltg">
-                                <rect key="frame" x="43" y="549" width="53" height="31"/>
+                                <rect key="frame" x="78" y="586" width="53" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="進む"/>
@@ -43,13 +43,20 @@
                                     <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYg-Tl-jL1"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="src1" translatesAutoresizingMaskIntoConstraints="NO" id="bVl-Xn-ri0">
-                                <rect key="frame" x="75" y="266" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVl-Xn-ri0">
+                                <rect key="frame" x="0.0" y="94" width="375" height="484"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="RWm-Re-fg3" appends="YES" id="Ihs-iE-XhE"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jtg-iq-LTH"/>
+                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="aeu-Pa-8iu" userLabel="Image View.top = Safe Area.top"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="NPl-wV-ny3" id="4Zh-Ri-Kky"/>
@@ -59,36 +66,55 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="RWm-Re-fg3">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="fFk-7o-EqC"/>
+                        <segue destination="1Yy-VD-wJ1" kind="show" id="6RY-3j-coJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="30" y="70"/>
+            <point key="canvasLocation" x="24.800000000000001" y="67.916041979010501"/>
         </scene>
         <!--Show Image View Controller-->
         <scene sceneID="Md4-pd-0rx">
             <objects>
                 <viewController id="1Yy-VD-wJ1" customClass="ShowImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P6d-9H-gqb" customClass="Show">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edm-QL-Mf9">
-                                <rect key="frame" x="75" y="274" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="-19" y="73" width="414" height="469"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-nE-hXZ">
+                                <rect key="frame" x="161" y="606" width="53" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <connections>
+                                    <segue destination="Gcf-Uo-NKh" kind="unwind" unwindAction="unwind:" id="cx7-Qh-FJU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aw5-Fc-fYR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nCM-nE-hXZ" secondAttribute="bottom" constant="10" id="VDy-5P-MG4"/>
+                            <constraint firstItem="nCM-nE-hXZ" firstAttribute="centerX" secondItem="P6d-9H-gqb" secondAttribute="centerX" id="iM9-lK-2BI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="K2S-2N-fAs"/>
                     <connections>
                         <outlet property="selectImageView" destination="edm-QL-Mf9" id="5fz-Zu-obX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTI-PT-rJZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Gcf-Uo-NKh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="700" y="70"/>
+            <point key="canvasLocation" x="698.55072463768124" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
-        <image name="src1" width="3456" height="2234"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
