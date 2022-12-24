@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,39 +12,41 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHf-U8-uaP">
-                                <rect key="frame" x="244" y="586" width="53" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="再生"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHf-U8-uaP">
+                                <rect key="frame" x="10.000000000000002" y="862" width="20.666666666666671" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" image="play.circle" catalog="system"/>
                                 <connections>
                                     <action selector="playStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vJj-xO-4Tf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPl-wV-ny3">
-                                <rect key="frame" x="161" y="586" width="53" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPl-wV-ny3">
+                                <rect key="frame" x="34.000000000000007" y="845.33333333333337" width="92.666666666666686" height="36.666666666666629"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.left.circle" catalog="system" title="戻る" imagePadding="8" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRL-Lh-zJt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-KU-ltg">
-                                <rect key="frame" x="78" y="586" width="53" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-KU-ltg">
+                                <rect key="frame" x="296.33333333333331" y="845.33333333333337" width="92.666666666666686" height="36.666666666666629"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="進む"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.right.circle" catalog="system" imagePlacement="trailing" title="進む" imagePadding="8" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="forward:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYg-Tl-jL1"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVl-Xn-ri0">
-                                <rect key="frame" x="0.0" y="94" width="375" height="484"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bVl-Xn-ri0">
+                                <rect key="frame" x="107" y="256" width="214" height="424"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="RWm-Re-fg3" appends="YES" id="Ihs-iE-XhE"/>
@@ -54,8 +56,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jtg-iq-LTH"/>
-                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="aeu-Pa-8iu" userLabel="Image View.top = Safe Area.top"/>
+                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.5" id="6LD-ca-bvD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NPl-wV-ny3" secondAttribute="bottom" constant="10" id="7YJ-c5-DJT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mHf-U8-uaP" secondAttribute="bottom" constant="10" id="BOY-3I-kLO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ud-KU-ltg" secondAttribute="trailing" multiplier="1.1" id="EHV-Ji-reR"/>
+                            <constraint firstItem="mHf-U8-uaP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Qck-sW-xEL"/>
+                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.5" id="aEA-0d-Sjo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1ud-KU-ltg" secondAttribute="bottom" constant="10" id="anF-hZ-MRh"/>
+                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="gVz-uz-7Tl"/>
+                            <constraint firstItem="mHf-U8-uaP" firstAttribute="trailing" secondItem="NPl-wV-ny3" secondAttribute="leading" multiplier="0.9" id="qng-9V-EaJ"/>
+                            <constraint firstItem="bVl-Xn-ri0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x5g-0h-ChA"/>
                         </constraints>
                     </view>
                     <connections>
@@ -73,24 +83,25 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="67.916041979010501"/>
+            <point key="canvasLocation" x="23.831775700934578" y="67.386609071274307"/>
         </scene>
         <!--Show Image View Controller-->
         <scene sceneID="Md4-pd-0rx">
             <objects>
                 <viewController id="1Yy-VD-wJ1" customClass="ShowImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="P6d-9H-gqb" customClass="Show">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="P6d-9H-gqb" customClass="Show">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="edm-QL-Mf9">
-                                <rect key="frame" x="-19" y="73" width="414" height="469"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edm-QL-Mf9">
+                                <rect key="frame" x="0.0" y="84" width="428" height="670"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCM-nE-hXZ">
-                                <rect key="frame" x="161" y="606" width="53" height="31"/>
+                                <rect key="frame" x="167.66666666666666" y="825.33333333333337" width="92.666666666666657" height="36.666666666666629"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <buttonConfiguration key="configuration" style="tinted" image="arrow.uturn.down.circle" catalog="system" title="戻る" imagePadding="8" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Gcf-Uo-NKh" kind="unwind" unwindAction="unwind:" id="cx7-Qh-FJU"/>
                                 </connections>
@@ -99,8 +110,12 @@
                         <viewLayoutGuide key="safeArea" id="Aw5-Fc-fYR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="edm-QL-Mf9" firstAttribute="centerY" secondItem="Aw5-Fc-fYR" secondAttribute="centerY" id="LTx-MT-h2t"/>
+                            <constraint firstItem="edm-QL-Mf9" firstAttribute="centerX" secondItem="Aw5-Fc-fYR" secondAttribute="centerX" id="NCZ-pF-8dZ"/>
+                            <constraint firstItem="edm-QL-Mf9" firstAttribute="width" secondItem="Aw5-Fc-fYR" secondAttribute="width" id="RPS-lh-7Ih"/>
                             <constraint firstAttribute="bottom" secondItem="nCM-nE-hXZ" secondAttribute="bottom" constant="10" id="VDy-5P-MG4"/>
                             <constraint firstItem="nCM-nE-hXZ" firstAttribute="centerX" secondItem="P6d-9H-gqb" secondAttribute="centerX" id="iM9-lK-2BI"/>
+                            <constraint firstItem="edm-QL-Mf9" firstAttribute="height" secondItem="Aw5-Fc-fYR" secondAttribute="height" multiplier="0.8" id="s7R-p0-vmH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K2S-2N-fAs"/>
@@ -115,6 +130,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.left.circle" catalog="system" width="128" height="121"/>
+        <image name="arrow.right.circle" catalog="system" width="128" height="121"/>
+        <image name="arrow.uturn.down.circle" catalog="system" width="128" height="121"/>
+        <image name="play.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

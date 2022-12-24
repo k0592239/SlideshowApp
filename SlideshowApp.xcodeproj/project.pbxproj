@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4F54D902295483BF0074031A /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F54D901295483BF0074031A /* ShowImageViewController.swift */; };
+		4F66066C2956DD9A0091B3A1 /* scr07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F66066A2956DD9A0091B3A1 /* scr07.jpg */; };
+		4F66066D2956DD9A0091B3A1 /* scr08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F66066B2956DD9A0091B3A1 /* scr08.jpg */; };
+		4F6606742956DF040091B3A1 /* scr01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F66066E2956DF040091B3A1 /* scr01.jpg */; };
+		4F6606752956DF040091B3A1 /* scr05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F66066F2956DF040091B3A1 /* scr05.jpg */; };
+		4F6606762956DF040091B3A1 /* scr06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6606702956DF040091B3A1 /* scr06.jpg */; };
+		4F6606772956DF040091B3A1 /* scr04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6606712956DF040091B3A1 /* scr04.jpg */; };
+		4F6606782956DF040091B3A1 /* scr02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6606722956DF040091B3A1 /* scr02.jpg */; };
+		4F6606792956DF040091B3A1 /* scr03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F6606732956DF040091B3A1 /* scr03.jpg */; };
 		4F85458029532A4F0057DE54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85457F29532A4F0057DE54 /* AppDelegate.swift */; };
 		4F85458229532A4F0057DE54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85458129532A4F0057DE54 /* SceneDelegate.swift */; };
 		4F85458429532A4F0057DE54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85458329532A4F0057DE54 /* ViewController.swift */; };
@@ -18,6 +26,14 @@
 
 /* Begin PBXFileReference section */
 		4F54D901295483BF0074031A /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		4F66066A2956DD9A0091B3A1 /* scr07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr07.jpg; sourceTree = "<group>"; };
+		4F66066B2956DD9A0091B3A1 /* scr08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr08.jpg; sourceTree = "<group>"; };
+		4F66066E2956DF040091B3A1 /* scr01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr01.jpg; sourceTree = "<group>"; };
+		4F66066F2956DF040091B3A1 /* scr05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr05.jpg; sourceTree = "<group>"; };
+		4F6606702956DF040091B3A1 /* scr06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr06.jpg; sourceTree = "<group>"; };
+		4F6606712956DF040091B3A1 /* scr04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr04.jpg; sourceTree = "<group>"; };
+		4F6606722956DF040091B3A1 /* scr02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr02.jpg; sourceTree = "<group>"; };
+		4F6606732956DF040091B3A1 /* scr03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scr03.jpg; sourceTree = "<group>"; };
 		4F85457C29532A4F0057DE54 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F85457F29532A4F0057DE54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F85458129532A4F0057DE54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +82,14 @@
 				4F85458829532A500057DE54 /* Assets.xcassets */,
 				4F85458A29532A500057DE54 /* LaunchScreen.storyboard */,
 				4F85458D29532A500057DE54 /* Info.plist */,
+				4F66066E2956DF040091B3A1 /* scr01.jpg */,
+				4F6606722956DF040091B3A1 /* scr02.jpg */,
+				4F6606732956DF040091B3A1 /* scr03.jpg */,
+				4F6606712956DF040091B3A1 /* scr04.jpg */,
+				4F66066F2956DF040091B3A1 /* scr05.jpg */,
+				4F6606702956DF040091B3A1 /* scr06.jpg */,
+				4F66066A2956DD9A0091B3A1 /* scr07.jpg */,
+				4F66066B2956DD9A0091B3A1 /* scr08.jpg */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -129,8 +153,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F85458C29532A500057DE54 /* LaunchScreen.storyboard in Resources */,
+				4F6606782956DF040091B3A1 /* scr02.jpg in Resources */,
+				4F66066D2956DD9A0091B3A1 /* scr08.jpg in Resources */,
 				4F85458929532A500057DE54 /* Assets.xcassets in Resources */,
+				4F6606752956DF040091B3A1 /* scr05.jpg in Resources */,
+				4F6606772956DF040091B3A1 /* scr04.jpg in Resources */,
+				4F66066C2956DD9A0091B3A1 /* scr07.jpg in Resources */,
+				4F6606762956DF040091B3A1 /* scr06.jpg in Resources */,
+				4F6606742956DF040091B3A1 /* scr01.jpg in Resources */,
 				4F85458729532A4F0057DE54 /* Main.storyboard in Resources */,
+				4F6606792956DF040091B3A1 /* scr03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
