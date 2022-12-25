@@ -51,18 +51,18 @@ class ViewController: UIViewController {
         playStopButton.configuration = configuration
     }
     // 進むボタン
-    @IBAction func forward(_ sender: Any) {
+    @IBAction func forward(_ sender: UIButton) {
         setImageIndexForward()
         imageView.image = self.imageArray[self.imageIndex]
     }
     // 戻るボタン IBAction
-    @IBAction func back(_ sender: Any) {
+    @IBAction func back(_ sender: UIButton) {
         setImageIndexBack()
         imageView.image = self.imageArray[self.imageIndex]
     }
-
     // 再生／停止ボタン IBAction
-    @IBAction func playStop(_ sender: Any) {
+    // 画像タップ時にも呼び出す場合は、sender の指定がないため、UIButton?とする
+    @IBAction func playStop(_ sender: UIButton?) {
         // 再生・停止ボタンの見た目の変更
         var title:String
         var icon:String
@@ -131,12 +131,11 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let showImageViewController:ShowImageViewController = segue.destination as! ShowImageViewController
         showImageViewController.image = imageView.image
+        // 自動送りの場合、停止する
+        if isOutSlide {
+            self.playStop(nil)
+        }
     }
-    // 画像タップ
-    @IBAction func imageViewTapped(_ sender: UITapGestureRecognizer) {
-        self.performSegue(withIdentifier: "toShowView", sender: self)
-    }
-
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
 }
