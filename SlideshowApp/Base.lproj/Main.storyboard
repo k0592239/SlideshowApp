@@ -49,7 +49,7 @@
                                 <rect key="frame" x="107" y="256" width="214" height="424"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="RWm-Re-fg3" appends="YES" id="Ihs-iE-XhE"/>
+                                    <outletCollection property="gestureRecognizers" destination="xaY-1M-vkc" appends="YES" id="Cg9-aD-u8x"/>
                                 </connections>
                             </imageView>
                         </subviews>
@@ -76,10 +76,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="RWm-Re-fg3">
+                <tapGestureRecognizer id="xaY-1M-vkc">
                     <connections>
-                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="fFk-7o-EqC"/>
-                        <segue destination="1Yy-VD-wJ1" kind="show" id="6RY-3j-coJ"/>
+                        <action selector="imageViewTapped:" destination="BYZ-38-t0r" id="ofp-Vm-IHC"/>
+                        <segue destination="1Yy-VD-wJ1" kind="show" id="slH-K4-EgV"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

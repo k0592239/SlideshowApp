@@ -133,7 +133,8 @@ class ViewController: UIViewController {
         showImageViewController.image = imageView.image
     }
     // 画像タップ
-    @IBAction func imageTapped(_ sender: Any) {
+    @IBAction func imageViewTapped(_ sender: UITapGestureRecognizer) {
+        self.performSegue(withIdentifier: "toShowView", sender: self)
     }
 
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
