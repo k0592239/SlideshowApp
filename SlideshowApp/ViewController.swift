@@ -38,12 +38,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.imageIndex = 0
         imageView.image = imageArray[self.imageIndex]
+        // 再生／停止ボタンのテキスト、フォントサイズの設定
         var configuration = UIButton.Configuration.filled()
         configuration.cornerStyle = .capsule
         configuration.imagePadding = 8
         configuration.title = "再生"
+        configuration.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
+                var outgoing = incoming
+                outgoing.font = UIFont.systemFont(ofSize: 20)
+                return outgoing
+            }
         playStopButton.configuration = configuration
-        playStopButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
     }
     // 進むボタン
     @IBAction func forward(_ sender: Any) {
@@ -70,15 +75,10 @@ class ViewController: UIViewController {
             icon = "stop.circle"
             startTimer()
         }
-//        playStopButton.setTitle(title, for: .normal)
         playStopButton.configuration?.title = title
         playStopButton.setImage(UIImage(systemName: icon,
                                         withConfiguration: UIImage.SymbolConfiguration(scale: .large)), for: .normal)
-        
-//        playStopButton.titleLabel?.font = UIFont.systemFont(ofSize: 30)
-//        playStopButton.titleLabel?.font = playStopButton.titleLabel?.font.withSize(50)
-//        playStopButton.titleLabel?.font = UIFont(name: "Arial", size: 50)
-//        playStopButton.titleLabel?.font = UIFont(name: "Zapfino", size: 50)
+
         // 戻る、進むボタンの設定
         forwardButton.isEnabled.toggle()
         backButton.isEnabled.toggle()
@@ -94,16 +94,20 @@ class ViewController: UIViewController {
     // 進むボタン押下時の画像インデックスを設定
     func setImageIndexForward() {
         if (self.imageIndex == self.imageArray.count - 1) {
+            // 最後の画像の場合、インデックスを最初に戻す
             self.imageIndex = 0
         } else {
+            // 最後の画像でない場合、インデックスを加算する
             self.imageIndex += 1
         }
     }
     // 戻るボタン押下時の画像インデックスを設定
     func setImageIndexBack() {
         if (self.imageIndex == 0) {
+            // 最初の画像の場合、インデックスを最後にする
             self.imageIndex = self.imageArray.count - 1
         } else {
+            // 最初の画像でない場合、インデックスを減算する
             self.imageIndex -= 1
         }
     }
@@ -123,7 +127,7 @@ class ViewController: UIViewController {
             self.timer = nil          // startTimer() の self.timer == nil で判断するために、 self.timer = nil としておく
         }
     }
-    // 画面繊維（字画面に表示する画像の設定）
+    // 画面遷移（次画面に表示する画像の設定）
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let showImageViewController:ShowImageViewController = segue.destination as! ShowImageViewController
         showImageViewController.image = imageView.image
