@@ -89,7 +89,7 @@
         <scene sceneID="Md4-pd-0rx">
             <objects>
                 <viewController id="1Yy-VD-wJ1" customClass="ShowImageViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="P6d-9H-gqb" customClass="Show">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="P6d-9H-gqb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
